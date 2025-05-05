@@ -12,6 +12,16 @@
 - 详细的统计数据和日志记录
 - 基于持续时间或请求数量的测试
 
+## 系统要求
+
+**重要提示：** 本工具需要 JDK 21 或更高版本才能运行。请确保您已安装 JDK 21 并正确配置了环境变量。
+
+您可以通过以下命令检查您的 Java 版本：
+
+```bash
+java -version
+```
+
 ## 构建项目
 
 ```bash
@@ -19,7 +29,9 @@
 ```
 
 ## 运行方式
-
+```
+java -jar ddos-kotlin-1.0.jar --args
+```
 查看帮助信息：
 
 ```bash
@@ -29,7 +41,7 @@
 或者在构建后直接运行：
 
 ```bash
-java -jar build/libs/ddos-kotlin-1.0-SNAPSHOT.jar --help
+java -jar build/libs/ddos-kotlin-1.0.jar --help
 ```
 
 ## 使用示例
@@ -37,13 +49,13 @@ java -jar build/libs/ddos-kotlin-1.0-SNAPSHOT.jar --help
 基本用法：
 
 ```bash
-java -jar build/libs/ddos-kotlin-1.0-SNAPSHOT.jar -t http://example.com
+java -jar build/libs/ddos-kotlin-1.0.jar -t http://example.com
 ```
 
 高级用法：
 
 ```bash
-java -jar build/libs/ddos-kotlin-1.0-SNAPSHOT.jar \
+java -jar build/libs/ddos-kotlin-1.0.jar \
   -t http://example.com \
   -c 200 \
   -r 500 \
